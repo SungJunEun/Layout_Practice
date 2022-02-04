@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+
+  /* Color */
+  --color-yellow: rgb(241, 241, 28);
+  --color-black: #000000;
+  --color-dark: #404040;
+  --color-white: #FFF;
+
+  /* Weight */
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+
+}
+
+/* General */
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+ul {
+  display: none;
+}
+
+h1,h2,h3 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-black);
+  font-family: inherit;
+  font-size: var(--font-size-small);
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+nav,
+a {
+  font-size: 0.875rem;
+}
+
+a {
+  font-weight: 700;
+}
+
+/* header */
+
+header {
+  background-image: url(../img/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  color: var(--color-white);
+}
+
+.header-container {
+  max-width: 400px;
+  margin: 0 2em;
+}
+
+nav {
+}
+.nav-logo {
+  background-color: var(--color-yellow);
+  padding-top: 2em;
+}
+
+.header-body {
+  padding: 4em 0;
+  width: 90%;
+}
+
+
+.header-subtitle {
+  margin: 1.5em 0;
+}
+
+a {
+  background-color: var(--color-yellow);
+  padding: 0.6em 1.5em;
+}
