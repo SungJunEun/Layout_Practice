@@ -2,10 +2,11 @@
   box-sizing: border-box;
 
   /* Color */
-  --color-yellow: rgb(241, 241, 28);
+  --color-yellow: #FFE600;
   --color-black: #000000;
   --color-dark: #404040;
   --color-white: #FFF;
+  --color-grey: #EBEBEB;
 
   /* Weight */
   --font-weight-bold: 700;
@@ -31,7 +32,7 @@ h1,h2,h3 {
 
 img {
   max-width: 100%;
-  display: block;
+  display: inline-block;
 }
 
 a {
@@ -57,8 +58,15 @@ h3 {
   font-weight: 400;
 }
 
+.section-title {
+  font-weight: 700;
+  border-bottom: 1px solid var(--color-yellow);
+  border-width: 2px;
+}
+
 nav,
-a {
+a,
+.footer-copyright {
   font-size: 0.875rem;
 }
 
@@ -100,4 +108,74 @@ nav {
 a {
   background-color: var(--color-yellow);
   padding: 0.6em 1.5em;
+}
+
+/* main */
+
+main {
+  margin: 3em auto;
+}
+
+.main-container {
+  max-width: 420px;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section + section {
+  margin-top: 3em;
+}
+
+.section-title {
+  display: inline-block;
+  padding-bottom: 0.5em;
+
+}
+
+.section-body {
+  line-height: 1.6;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: var(--color-grey);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 420px;
+}
+
+.footer-main {
+    opacity: 0.5;
+}
+
+.footer-body {
+  line-height: 1.6;
+}
+
+.footer-icon {
+  order: -1;
+  margin: 2em 0;
+}
+
+.footer-icon i {
+  font-size: 1.5rem;
+  margin-left: 4px;
+}
+
+.footer-logo {
+  opacity: 0.3;
+}
+
+.footer-copyright {
+  margin: 3em;
+  opacity: 0.3;
+
 }
